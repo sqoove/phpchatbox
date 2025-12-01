@@ -72,7 +72,7 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
 }
 ```
 
-Copy the `id` — that’s your personal `chat_id`
+Copy the `id` — that's your personal `chat_id`
 
 5. **Restore the webhook** (you must do this after):
 
@@ -145,7 +145,7 @@ window.parent.postMessage({type:"setButtonColor", color:buttonColor}, "*");
 
 ### Step 6: Embed the Widget in Your Site
 
-In your site’s HTML (e.g., `footer.php`), before `</body>`, add:
+In your site's HTML (e.g., `footer.php`), before `</body>`, add:
 
 ```html
 <script>window.chatboxbaseurl = 'https://yourdomain.com';</script>
@@ -184,7 +184,7 @@ window.chatWidgetConfig = {
 1. Open your website with the widget
 2. Start a chat — it should appear in Telegram instantly
 3. Reply **by tapping “Reply”** in Telegram or by starting the message with `[ID:xxxxxx]`
-4. The message will appear in the visitor’s chat within ~3 seconds
+4. The message will appear in the visitor's chat within ~3 seconds
 
 * * *
 
@@ -195,7 +195,7 @@ window.chatWidgetConfig = {
 | `getUpdates` returns nothing     | Run `deleteWebhook` first                                            |
 | Replies not showing              | Ensure you reply via Telegram using **Reply** or `[ID:visitorId]`    |
 | `reply.json` not created         | Check file permissions and that `telegram.php` is called             |
-| Widget doesn’t load              | Check paths to `widget.js` and `widget.html`                         |
+| Widget doesn't load              | Check paths to `widget.js` and `widget.html`                         |
 | No webhook data arrives          | Check HTTPS and run `setWebhook` correctly                           |
 
 * * *
